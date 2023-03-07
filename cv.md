@@ -20,7 +20,7 @@ I want to learn Front-End Development in RSSchool.
 ## Code Example
 ``` 
 function myFunction(a, b) {
-               
+   return a * b;        
 }
 ```
 ## Work experience:

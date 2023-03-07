@@ -27,4 +27,6 @@ function myFunction(a, b) {
 Nothing yet…
 ## Education
 * Belarusian National Ecomomic University, specialty _Accounting, analysis and control_
-
+## Languages
+ * Russian - native speaker
+ * English - A1 (_I try to learn English in every possible way._)

@@ -1,9 +1,43 @@
+/* @font-face {
+  font-family: Oxygen-Bold;
+  src: url("/assets/fonts/");
+} */
+
+/* raleway-regular - latin */
 @font-face {
-  font-family: Oxygen-Bold;
-  src: url("assets/fonts/Oxygen-Bold.ttf");
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* raleway-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/raleway-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/raleway-v28-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  font-family: Oxygen-Bold;
+  font-family: Raleway;
   font-weight: 400;
   line-height: 1.5;
   color: #4d2323;
@@ -13,53 +47,74 @@ body {
   box-sizing: border-box;
 }
 .header {
+  background-color: rgba(223, 223, 223);
   padding: 10px;
 }
 .container-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(223, 223, 223);
 }
 .container-main {
   display: flex;
   flex-direction: column;
   background-color: rgb(223, 223, 223);
-  border: 2px solid black;
+  border: 2px solid rgb(166, 152, 152);
 }
 .container-foto {
   display: flex;
   flex-direction: row;
   float: left;
   margin: 0 10px 5px 0;
-  text-align: center;
+  /* text-align: center; */
 }
-.container-FIO {
-  display: flex;
-  flex-direction: column;
-}
-.conteiner-general {
-  display: flex;
-  flex-direction: column;
-}
+
 .container-contact {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
+
+.items-menu {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.item-nenu {
+  margin-right: 10px;
+}
+
+.contacts-title {
+  margin-left: 35px;
+}
+
+.name {
+  font-family: 'Raleway';
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 5px;
+}
+
 .li-contact {
   list-style-type: none;
 }
 
 .wrapper {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 75px 
 }
+
 .conteiner-about {
   display: flex;
   flex-direction: row;
   background-color: rgb(223, 223, 223);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(166, 152, 152);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -72,7 +127,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgb(223, 223, 223);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(166, 152, 152);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -85,7 +140,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgb(223, 223, 223);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(166, 152, 152);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -98,7 +153,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgb(223, 223, 223);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(166, 152, 152);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -111,7 +166,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgb(223, 223, 223);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(166, 152, 152);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -149,4 +204,18 @@ body {
 
 .projects {
   list-style-type: none;  
+}
+
+.photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
